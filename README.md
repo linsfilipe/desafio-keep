@@ -8,8 +8,10 @@ Intruções para executar o backend:
 ## Frontend
 Intruções para executar o front:
 * 1 - Na pasta principal do projeto executar o seguinte comando:
+  >npm install
+* 2 - Execute a aplicação:
   >ng serve
-* 2 - Acesse a url http://localhost:4200/
+* 3 - Acesse a url http://localhost:4200/
 
 ### Observações
 * Existem melhorias que podem ser feitas, principalmente em validações e layout do frontend.
