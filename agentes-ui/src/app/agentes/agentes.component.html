@@ -1,0 +1,21 @@
+<div class="main-div">
+    <mat-card>
+        <mat-card-title>Upload de arquivos</mat-card-title>
+        <mat-card-subtitle>Carregue seu arquivo XML</mat-card-subtitle>
+        <ul>
+            <div>
+                <button mat-flat-button color="primary" (click)="addNewFileItem()">
+                    <mat-icon fontIcon="add"></mat-icon>
+                </button>
+            </div>
+            <div *ngFor="let file of files; let i = index">
+                <input type="file" (change)="addFileToUpload($event)">
+                <button mat-flat-button color="warn" (click)="removeFile(i)">
+                    <mat-icon fontIcon="remove"></mat-icon>
+                </button>
+                <mat-divider></mat-divider>
+            </div>
+        </ul>
+        <button mat-flat-button color="primary" (click)="upload()" [disabled]="uploadFiles.length === 0">Upload</button>
+    </mat-card>
+</div>

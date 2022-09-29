@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  Agentes
+</mat-toolbar>
+
+<ng-container *ngIf="loading$ | async">
+  <mat-progress-spinner [mode]="'indeterminate'"></mat-progress-spinner>
+</ng-container>
+
+<router-outlet></router-outlet>
